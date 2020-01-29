@@ -8,11 +8,11 @@ import { Article } from './article.model';
 })
 
 export class ArticleComponent implements OnInit {
-  @HostBinding('attr.class') cssClass = 'card';
+  @HostBinding('attr.class') cssClass = 'card mt-4';
   @Input() article:Article
 
   constructor() {
-    //this.article = new Article('Angular 2', 'http://angular.io', 10);
+
   }
 
   voteUp():Boolean { //Aggiunto tipo di ritorno
